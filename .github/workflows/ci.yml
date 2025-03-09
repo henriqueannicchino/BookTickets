@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Get the time
         id: time
-        run:
+        run: |
           NOW=$(date +"%r")
           echo "now=${NOW}" >> $GITHUB_OUTPUT
         env:
